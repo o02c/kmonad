@@ -301,6 +301,9 @@ data Keycode
   | Missing253
   | Missing254
   | Missing255
+  -- Mac
+  | KeyLANG1
+  | KeyLANG2
   -- Darwin
   | KeyFn
   | KeyLaunchpad
@@ -418,4 +421,8 @@ aliases = Q.mkMultiMap
   , (KeyMuhenkan,         ["muh"])
   , (KeyHenkan,           ["hen"])
   , (KeyKatakanaHiragana, ["kah"])
+  -- for mac
+  , (KeyMute,             ["mute"])
+  , (KeyLANG1,            ["lang1","kana"])
+  , (KeyLANG2,            ["lang2","eisu"])
   ]
